@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0d1117;
+  color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.password-hidden {
+  -webkit-text-security: disc;
+}
+
+.icon-red {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(3047%)
+    hue-rotate(350deg) brightness(88%) contrast(91%);
+}
+
+.icon-muted {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(8%) saturate(531%)
+    hue-rotate(179deg) brightness(88%) contrast(86%);
+}
+
+.icon-white {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(6%) saturate(427%)
+    hue-rotate(182deg) brightness(99%) contrast(96%);
+}
+
+.icon-star {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(85%) saturate(1030%)
+    hue-rotate(359deg) brightness(101%) contrast(103%);
+}
+
+.icon-green {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(89%) saturate(479%)
+    hue-rotate(93deg) brightness(92%) contrast(89%);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent;
+}
+
+.custom-select-dropdown {
+  padding-right: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 999px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #0d1117;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
