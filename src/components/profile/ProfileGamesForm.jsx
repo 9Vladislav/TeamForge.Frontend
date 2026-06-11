@@ -87,15 +87,13 @@ export function ProfileGamesForm({
         if (!game.gameId) continue;
 
         const data = {
+          gameId: Number(game.gameId),
           skillLevel: game.skillLevel || "Beginner",
           playstyleDescription: game.playstyleDescription || "",
         };
 
         if (game.isNew) {
-          await profiles.addGame({
-            gameId: Number(game.gameId),
-            ...data,
-          });
+          await profiles.addGame(data);
         } else {
           await profiles.updateGame(game.userGameId, data);
         }
